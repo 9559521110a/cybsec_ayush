@@ -1,23 +1,79 @@
 <!doctype html>
 <html>
 <head><title>project</title>
+<script src="https://kit.fontawesome.com/60dcb6c088.js" crossorigin="anonymous"></script>
 <style>
-.dropdown
-{
-display: inline-block;
+.logo{
+background-image: url("logo3.jpg");
+background-repeat: no-repeat;
+background-size: 1350px 400px;
+font-size: 100px;
+text-align: center;
+height: 400px;
+width: 1350px;
+}
+.dropdown .button1{
+background-color: #333;
+font-size: 30px;
+padding: 10px 106px;
+outline: none;
+border: none;
+margin: 0;
+}
+.dropdown{
+float: left;
+overflow: hidden;
+}
+.navigation{
+overflow: hidden;
+background-color: #333;
+width: 1350px;
+height: 50px;
+font-family: Arial;
+}
+.navigation a {
+float: left;
+font-size: 30px;
+color: white;
+text-align:center;
+padding:10px 106px;}
+
+.navigation a:hover, .dropdown:hover .button1{
+
+background-color: red;
+}
+.dropdown-content a {
+float: none;
+font-size: 20px;
+
+display: block;
+color: black;
+}
+.dropdown-content a:hover{
+background-color: #ddd;
 }
 .dropdown-content{
+position: absolute;
 display: none;
+padding: 10px 60px;
+background-color: #f9f9f9;
 }
 .dropdown:hover  .dropdown-content{
 display: block;
 }
 </style></head>
-<body>
+<body><div class="logo">WELCOME TO CYBSEC</div>
+<div class="navigation">
+<a href="">Home</a>
+<a href="">Team</a>
+<a href="">About</a>
+
+
 <div class="dropdown">
-<span>mouse over me</span>
+<button class="button1"><b style="color: white">More</b>&nbsp&nbsp<i class="fas fa-ellipsis-v"></i></button>
 <div class="dropdown-content">
-<p>hello</p>
-</div></div>
+<a href="">Courses</a>
+<a href="">Sign up </a>
+</div></div></div>
 </body>
 </html>
