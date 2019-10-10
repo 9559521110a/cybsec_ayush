@@ -3,17 +3,57 @@
 <head><title>project</title>
 <script src="https://kit.fontawesome.com/60dcb6c088.js" crossorigin="anonymous"></script>
 <style>
+#team{
+float: left;
+width: 1350px;
+height: 900px;
+background-color: black;
+color: white;
+}
+img{
+border-radius: 50%;
+}
+#aim{
+float: left;
+height: 800px;
+width: 1350px;
+padding: 0px;
+margin: 0;
+background-image: url("wall.jpeg");
+background-repeat: no-repeat;
+background-size: 1350px 800px ;
+}
+.slider{
+text-align:left;
+font-size: 100px;
+font-family: Brush Script MT, Brush Script Std, cursive;
+position: relative;
+width: 100px;
+height: 40px;
+animation: myfirst 20s 1000;
+animation-direction: alternate;
+}
+@keyframes myfirst {
+  0%   {left: 100px;}
+  25%  { left: 800px;}
+  50%  { left: 800px;}
+  75%  { left: 100px;}
+  100% { left: 100px;}
+}
 .logo{
-background-image: url("logo3.jpg");
+background-image: url("logo0.jpg");
 background-repeat: no-repeat;
 background-size: 1350px 400px;
-font-size: 100px;
-text-align: center;
+color: #C7D222;
+padding: 0px;
+margin: 0;
+text-align: left;
 height: 400px;
-width: 1350px;
+width: 1350px; 
 }
 .dropdown .button1{
 background-color: #333;
+font-family: "Comic Sans MS", cursive, sans-serif;
 font-size: 30px;
 padding: 10px 106px;
 outline: none;
@@ -33,9 +73,10 @@ font-family: Arial;
 }
 .navigation a {
 float: left;
+font-family: "Comic Sans MS", cursive, sans-serif;
 font-size: 30px;
+border: none;
 color: white;
-text-align:center;
 padding:10px 106px;}
 
 .navigation a:hover, .dropdown:hover .button1{
@@ -44,10 +85,10 @@ background-color: red;
 }
 .dropdown-content a {
 float: none;
-font-size: 20px;
-
+font-size: 25px;
 display: block;
 color: black;
+text-align: left;
 }
 .dropdown-content a:hover{
 background-color: #ddd;
@@ -55,25 +96,40 @@ background-color: #ddd;
 .dropdown-content{
 position: absolute;
 display: none;
-padding: 10px 60px;
 background-color: #f9f9f9;
 }
 .dropdown:hover  .dropdown-content{
 display: block;
 }
 </style></head>
-<body><div class="logo">WELCOME TO CYBSEC</div>
+<body>
+<div class="logo"><b class="slider">WELCOME<br>&nbsp&nbsp&nbspTO<br>CYBSEC</b></div>
 <div class="navigation">
-<a href="">Home</a>
-<a href="">Team</a>
-<a href="">About</a>
-
-
+<a href="file:///C:/Users/hp/Desktop/kgp.html">Home</a>
+<a href="#team">Team</a>
+<a href="#aim">About</a>
 <div class="dropdown">
 <button class="button1"><b style="color: white">More</b>&nbsp&nbsp<i class="fas fa-ellipsis-v"></i></button>
 <div class="dropdown-content">
 <a href="">Courses</a>
-<a href="">Sign up </a>
+<a href="">Sign up </a> 
 </div></div></div>
+<div id="aim">
+<b style="font-family: Brush Script MT, Brush Script Std, cursive;font-size: 50px;text-align: center;position: relative;left: 500px;"><br>OBJECTIVE</b>
+<b style="font-family: cursive;font-size: 30px;position: relative;left:250px;top: 150px;">Ethical Hacking</b>
+<p style="font-family: cursive;font-size: 20px;text-align: center;position:relative;right: 80px;top: 150px">CYBERSEC provides a platform to learn ethical hacking.This team is to crave one's<br> interest for hacking and utilize it in a benficial way.</p>
+<b style="font-family: cursive;font-size: 30px;position: relative;left:500px;top: 200px;">Web Designing</b>
+<p style="font-family: cursive;font-size: 20px;text-align: center;position:relative;right: 80px;top: 200px">Team provides a perfect guidance and source to learn front-end <br>and back-end of webpage development</p>
+<b style="font-family: cursive;font-size: 30px;position: relative;left:500px;top: 250px;">Project Management</b>
+<p style="font-family: cursive;font-size: 20px;text-align: center;position:relative;right: 80px;top: 250px">The ultimate objective is to come up with interesting projects <br>and participate in bug bounty competitions </p>
+</div>
+<div id="team"><br><b style="font-size:50px;font-family: Brush Script MT, Brush Script Std, cursive;text-align: center;position: relative;left: 500px;">Team Mentors</b><br>
+<img src="mentor.jpg" style="position:relative;left:30px;top:50px;"><p style="font-size: 30px;font-family: cursive;position:relative;top: 50px;left:80px;">MENTOR 1</p>
+<img src="mentor.jpg" style="position:relative;left:500px;top:-250px;"><p style="font-size: 30px;font-family: cursive;position:relative;top: -250px;left:550px;">MENTOR 2</p>
+<img src="mentor.jpg" style="position:relative;left:1000px;top:-550px;"><p style="font-size: 30px;font-family: cursive;position:relative;top: -550px;left:1050px;">MENTOR 3</p>
+<img src="mentor.jpg" style="position:relative;left:30px;top:-400px;"><p style="font-size: 30px;font-family: cursive;position:relative;top: -400px;left:80px;">MENTOR 4</p>
+<img src="mentor.jpg" style="position:relative;left:500px;top:-700px;"><p style="font-size: 30px;font-family: cursive;position:relative;top: -700px;left:550px;">MENTOR 5</p>
+<img src="mentor.jpg" style="position:relative;left:1000px;top:-1000px;"><p style="font-size: 30px;font-family: cursive;position:relative;top: -1000px;left:1050px;">MENTOR 6</p>
+</div>
 </body>
 </html>
